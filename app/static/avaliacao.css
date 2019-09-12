@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+/*Conteúdo*/
+.pagina-avaliacao .article-avaliacao{
+    margin: 76px 200px;
+    padding: 0px 120px;
+}
+
+.pagina-avaliacao .article-avaliacao h2{
+    font-family: 'Ramaraja', serif;
+    font-weight: normal;
+    font-size: 50pt;
+    color: #374760;
+    line-height: 70px;
+}
+
+.pagina-avaliacao .article-avaliacao h2::after{
+    content: " ";
+    display: block;
+    border: 3px solid #4CA0FF;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.pagina-avaliacao .article-avaliacao h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 14pt;
+    
+    color: #838383;
+    margin-bottom: 30px;
+}
+
+.formulario{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.formulario label span{
+    margin-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.formulario .form-right-avaliacao{
+    margin-top: 15px;
+}
+
+.formulario .form-left-avaliacao{
+    margin-top: 15px;
+} 
+
+.formulario .form-left-avaliacao .nome-empresa{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #4CA0FF;
+    width: 200px;
+}
+
+.formulario .form-left-avaliacao .nome-empresa::placeholder{
+    font-family: 'Roboto Slab', serif;
+    opacity: .5;
+}
+
+.formulario .form-left-avaliacao #ultimoItem{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.formulario .form-espaco-anterior{
+    margin-top: 30px;
+}
+
+.formulario #ultimo-form{
+    font-family: 'Roboto Slab', serif;    
+}
+
+.pen-form #penultimo-form{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pen-form #texto-cinza{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+    opacity: .5;
+    color: #838383;
+}
+
+.pen-form input{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #4CA0FF;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.pen-form input::placeholder{
+    font-family: 'Roboto Slab', serif;    
+    opacity: .5;
+}
+
+.pen-form #ultimo-form{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+}
+
+.pen-form button{
+    font-family: 'Roboto Slab', serif;
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #4CA0FF;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 10px;
+}

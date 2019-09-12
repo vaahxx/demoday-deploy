@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="../static/depoimentos-empresa.css" />
+{% endblock %}
+
+{% block title %}
+<GirlscanCode/> | Depoimentos
+{% endblock %}
+
+{% block content %}
+<main class="pagina-depoimentos">
+    <article>
+        <h2>Depoimentos</h2>
+        <h3> Avaliações da empresa <strong>ANOTHER CAT IPSUM</strong></h3>
+        <div class="avaliacao-empresa">
+            <div>
+                <img class="img-logo" src="../static/images/logo.png" alt="Logo empresa">
+            </div>
+            {% for depoimento in depoimentos %}
+            {% if depoimento.empresa == "Another Cat Ipsum" %}
+                <div class="avaliacao">
+                    <h4> {{depoimento.empresa}} </h4>
+                    <p class="site">www.anothercatipsum.com.br</p>
+                    <p class="p-avaliacao">Avaliação da empresa {{depoimento.empresa}}</p>
+                    <div class="bullet">
+                        <p class="nota">3,0</p>
+                        <img class="rate" src="../static/images/circle-solid.svg" alt="">
+                        <img class="rate" src="../static/images/circle-solid.svg" alt="">
+                        <img class="rate" src="../static/images/circle-solid.svg" alt="">
+                        <img class="rate" src="../static/images/circle-regular.svg" alt="">
+                        <img class="rate" src="../static/images/circle-regular.svg" alt="">
+                        <p class="mulheres">2 mulheres indicaram esta empresa</p>
+                    </div>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </article>
+
+    <section class="depoimentos">
+        {% for depoimento in depoimentos %}
+            <div class="flex-conteiner">
+                <img src="../static/images/Aspas.png" alt="">
+                <p class="pseudo">
+                    {{ depoimento.avaliacao|linebreaksbr }}
+                </p>
+                <h4> {{ depoimento.empresa}} </h4>
+                <p class="sem-pseudo"> {{ depoimento.data }} </p>
+            </div>
+        {% endfor %}
+        <!-- <div class="flex-conteiner">
+            <img src="../static/images/Aspas.png" alt="">
+            <p class="pseudo">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum maiores libero voluptate impedit
+                temporibus cum provident iste doloremque est, mollitia voluptatum nihil sequi corrupti cupiditate
+                recusandae totam doloribus nemo saepe".
+            </p>
+            <h4>Empresa Y</h4>
+            <p class="sem-pseudo">15/07/2019</p>
+        </div>
+        <div class="flex-conteiner">
+            <img src="../static/images/Aspas.png" alt="">
+            <p class="pseudo">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum maiores libero voluptate impedit
+                temporibus cum provident iste doloremque est, mollitia voluptatum nihil sequi corrupti cupiditate
+                recusandae totam doloribus nemo saepe".
+            </p>
+            <h4>Empresa Z</h4>
+            <p class="sem-pseudo">15/07/2019</p>
+        </div> -->
+    </section>
+    <section class="nav-empresas">
+        <nav class="mais-recentes">
+            <p>Mais recentes</p>
+            <ul>
+                <li><a href="">Avaliações Itaú</a></li>
+                <li><a href="">Avaliações Bradesco</a></li>
+                <li><a href="">Avaliações IBM</a></li>
+                <li><a href="">Avaliações Santander</a></li>
+            </ul>
+        </nav>
+        <nav class="mais-avaliadas">
+            <p>Mais avaliadas</p>
+            <ul>
+                <li><a href="">Avaliações Itaú</a></li>
+                <li><a href="">Avaliações Bradesco</a></li>
+                <li><a href="">Avaliações IBM</a></li>
+                <li><a href="">Avaliações Santander</a></li>
+            </ul>
+        </nav>
+    </section>
+</main>
+{% endblock %}

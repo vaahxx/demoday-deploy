@@ -1,0 +1,125 @@
+.menu{
+    align-items: center;
+    display: flex;
+    height: 11vh;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+    color: #374760;
+    font-family: 'Ramaraja', serif;
+    font-size: 50pt;
+    font-weight: normal;
+}
+h1::after{
+    content: " ";
+    display: block;
+    border: 3px solid #4CA0FF;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cursos{
+    align-items: flex-start;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    width: 50vw;
+}
+main p{
+    color: #838383;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14pt;
+    margin: 0;
+}
+main div{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    width: 50vw;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: center;
+    width: 55vw;
+}
+.front{
+    align-items: center;
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    display: flex;
+    height: 15vw;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+.back{
+    align-items: center;
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    display: flex;
+    height: 15vw;
+    justify-content: space-evenly;;
+    width: 20vw;
+}
+.foto{
+    align-items: center;
+    background-color: #4CA0FF;
+    display: flex;
+    height: 35vh;
+    justify-content: flex-start;
+    width: 20vw;
+}
+main a{
+    color: #838383;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10pt;
+    text-decoration: none;
+}
+main a:hover{
+    font-weight: bold;
+}
+main h3{
+    color: #4CA0FF;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+.menina{
+    height: 35vh;
+    width: 20vw;
+}
+.girlfooter{
+    bottom: 0;
+    height: auto;
+    position: absolute;
+    padding-left: 20px;
+    width: 9vw;
+}
+.redes{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: 12pt;
+    height: auto;
+    justify-content: center;
+    width: 65%;
+}
+
+
+
+
+
+

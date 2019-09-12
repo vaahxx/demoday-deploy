@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="../static/avaliacao.css"/>
+<link rel="stylesheet" href="avaliacao.css"/>
+{% endblock %}
+
+{% block title %} <GirlscanCode/> | Avaliações {% endblock %} 
+
+{% block content %}
+    <main class="pagina-avaliacao">
+        <article class="article-avaliacao">
+            <h2>Seja bem-vinda!</h2>
+            <h3>Tudo que você publica ajuda outras mulheres a encontrarem <br> uma empresa e um trabalho
+                em que se sintam seguras e <br> confortáveis.</h3>
+            <h3>Ah! Não se preocupe, todas as informações serão publicadas <br> de forma sigilosa.</h3>
+            <h3>Nós agradecemos!</h3>
+            <div class="formulario">
+                <div class="tracado-lateral-azul">
+                    <p>O que gostaria de avaliar?</p>
+                    <div class="form-right-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Empresa</span>
+                        </label>
+                    </div>
+                    <div class="form-right-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Salário</span>
+                        </label>
+                    </div>
+                    <div class="form-right-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Avaliação de benefícios</span>
+                        </label>
+                    </div>
+                    <div class="form-right-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Avaliação de entrevistas</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <p class="form-espaco-anterior">Você é uma atual ou ex-funcionária?</p>
+                    <div class="form-left-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Atual funcionária</span>
+                        </label>
+                    </div>
+                    <div class="form-left-avaliacao">
+                        <label>
+                            <input type="checkbox">
+                            <span>Ex-funcionária</span>
+                        </label>
+                    </div>
+                    <div class="form-left-avaliacao">
+                        <p id="ultimoItem">Nome da empresa:</p>
+                            <input class="nome-empresa" type="text" placeholder="Digite o nome da empresa">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="pen-form">
+                    <p id="penultimo-form">Conte-nos um pouco mais sobre a empresa: </p>
+                    <p id="texto-cinza">Aqui você pode nos contar um pouco sobre <br>
+                    as vantagens e desvantagens de trabalhar <br>nesta empresa.</p>
+                    <input type="text" placeholder="Conte-nos algo:)">
+                </div>
+                
+                <div class="pen-form">
+                    <p id="ultimo-form">Você recomendaria esta empresa à alguém? <br>Explique.</p>
+                    <input type="text" placeholder="Conte-nos algo:)"> <br>
+                    <a href="/depoimentos/">
+                        <button type="submit">Enviar</button>
+                    </a>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+{% endblock %}     

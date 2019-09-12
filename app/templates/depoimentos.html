@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="../static/depoimentos.css" />
+{% endblock %}
+
+{% block title %}
+<GirlscanCode/> | Depoimentos
+{% endblock %}
+
+{% block content %}
+    <main class="pagina-depoimentos">
+        <article>
+            <h2>Depoimentos</h2>
+            <p id="avaliacao">No campo abaixo, digite o nome  da empresa <br> e veja qual a avaliação.</p>
+            <input class="nome-empresa" type="text" placeholder="Nome da empresa"> 
+            <a href="/depoimentos/empresa">
+                <input class="botao-lupa"type="submit">
+            </a>
+        </article>
+        <article class="novos-depoimentos">
+            <h2>Novos depoimentos</h2>
+            <p>Aqui você encontra os depoimentos compartilhados <br> por outras mulheres. </p>
+        </article>
+        <section class="depoimentos">
+
+            {% for depoimento in depoimentos %}
+                <div class="flex-conteiner">
+                    <img src="../static/images/Aspas.png" alt="">
+                    <p class="pseudo">
+                        {{ depoimento.avaliacao|linebreaksbr }}
+                    </p>
+                    <h4> {{ depoimento.empresa }} </h4>
+                    <p class="sem-pseudo"> {{ depoimento.data }} </p>
+                </div>
+            {% endfor %}
+
+                <!-- <div class="flex-conteiner">
+                <img src="../static/images/Aspas.png" alt="">
+                <p class="pseudo">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum maiores libero voluptate impedit
+                    temporibus cum provident iste doloremque est, mollitia voluptatum nihil sequi corrupti cupiditate
+                    recusandae totam doloribus nemo saepe".
+                </p>
+                <h4>Empresa Y</h4>
+                <p class="sem-pseudo">15/07/2019</p>
+            </div> -->
+        </section>
+        <section class="nav-empresas">
+            <nav class="mais-recentes">
+                <p>Mais recentes</p>
+                <ul>
+                    <li><a href="">Avaliações Itaú</a></li>
+                    <li><a href="">Avaliações Bradesco</a></li>
+                    <li><a href="">Avaliações IBM</a></li>
+                    <li><a href="">Avaliações Santander</a></li>
+                </ul>
+            </nav>
+            <nav class="mais-avaliadas">
+                    <p>Mais avaliadas</p>
+                    <ul>
+                        <li><a href="">Avaliações Itaú</a></li>
+                        <li><a href="">Avaliações Bradesco</a></li>
+                        <li><a href="">Avaliações IBM</a></li>
+                        <li><a href="">Avaliações Santander</a></li>
+                    </ul>
+                </nav>
+        </section>
+    </main>
+{% endblock %}
+ 

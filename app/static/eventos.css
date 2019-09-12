@@ -1,0 +1,111 @@
+.menu{
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    width: 100%;
+}
+
+h1{
+    color: #374760;
+    font-family: 'Ramaraja', serif;
+    font-size: 50pt;
+    font-weight: normal;
+}
+
+h1::after{
+    content: " ";
+    display: block;
+    border: 3px solid #4CA0FF;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.eventos{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+main p{
+    color: #838383;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14pt;
+    margin: 0;
+}
+
+main div{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+.paragrafo{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50vw;
+}
+
+
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-start;
+    width: 100%;
+}
+.info{
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    width: 50vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    
+}
+
+section h3{
+    color: #4CA0FF;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 0;
+}
+
+section p{
+    color: #838383;
+    font-family: 'Roboto Slab', serif;
+}
+
+section a{
+    text-decoration: none;
+    color: #838383;
+}
+
+section a:hover{
+    font-weight: bold;
+    color: #4CA0FF;
+}

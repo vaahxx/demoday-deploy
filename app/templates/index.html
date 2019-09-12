@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_head %}
+<link rel="stylesheet" href="../static/style.css" />
+<script defer src="../static/index.js"></script>
+{% endblock %} 
+
+{% block title %} <GirlscanCode/> {% endblock %} 
+
+{% block content %}
+<main>
+	<div>
+		<p>Um site que reúne conteúdo para mostrar que o mundo da tecnologia também pertence às mulheres</p>
+	</div>
+	<div>
+    	<h1>&ltGirls<span>can</span>Code/&gt</h1>
+	</div>
+	<div>
+		<img src="../static/images/mulher1.png" alt="foto menina sentada">
+	</div>
+</main>
+<section>
+	<div>
+		<h2>O Projeto</h2>
+	</div>
+	<div class="quadrados">
+		<div class="info">
+			<div class="quadrado">
+				<img src="../static/images/ícones-gcc/eventos.svg" alt="desenho calendario">
+			</div>
+			<div class="paragrafo">
+				<a href="/eventos/"><p> Eventos como meet-ups, cursos presenciais, para que possa aprender e trocar experiências com pessoas da área. </p></a> 
+			</div>
+		</div>
+		<div class="info">
+			<div class="quadrado">
+				<img src="../static/images/ícones-gcc/compartilhe.svg" alt="">
+			</div>
+			<div class="paragrafo">
+				<a href="/avaliacao/"><p>Compartilhe como é trabalhar na área da TI. Sua empresa é bacana? Indicaria para outras mulheres?</p></a>
+			</div>
+		</div>
+		<div class="info">
+			<div class="quadrado">
+				<img class="cap"  src="../static/images/ícones-gcc/cursos.svg" alt="">
+			</div>
+			<div class="paragrafo">
+				<a href="/cursos/"><p>Aqui você encontra a biblioteca de cursos que indicamos para que você comece a aprender a programar!</p></a>
+			</div>
+		</div>
+	</div>
+</section>
+<article>
+	<div class="fotos">
+		<div class="img">
+			<img src="../static/images/MULHERES01.png" alt="foto Ada">
+		</div>
+		<div>
+			<img class="menina" src="../static/images/mulher-celular.png" alt="desesenho menina">
+		</div>
+	</div>
+	<div class="texto">
+		<div class="texto1">
+			<h2>As mulheres que inspiram</h2>
+		</div>
+		<div class="texto1">
+			<p>A história do mundo foi contada pelos homens. Basta lembrar quantas
+				inventoras, artistas, que você conhece. Mas isso nunca significou que as
+				mulheres não deram importantes contribuições a todos os campos do
+				conhecimento.
+			</p>
+		</div>
+	</div>
+</article>
+<section>
+	<div>
+		<h2 class="titulo">Se interessou?</h2>
+	</div>
+	<div class="frase">
+		<p>Cadastre-se e conheça nossa plataforma, tenha acesso aos cursos, eventos e participe desse mundo da programação. É rapidinho!</p>
+	</div>
+	<div class="email">
+		<input type="email" placeholder="Insira seu e-mail">
+		<button>Cadastre-se</button>
+	</div>
+</section>
+{% endblock %}
